@@ -1,0 +1,124 @@
+/* Admin Page Layout */
+.admin-page {
+  margin-top: 10vh;
+  height: fit-content;
+  background-color: #f4f7fa; /* Light background for the page */
+}
+
+.admin-page-cards {
+  display: grid;
+  grid-template-columns: repeat(
+    auto-fill,
+    minmax(250px, 1fr)
+  ); /* Responsive grid */
+  gap: 20px;
+  justify-content: center;
+  align-items: center;
+  margin-top: 20px;
+}
+
+/* Admin Card Design */
+.admin-card {
+  padding: 2vh 3vw;
+  text-align: center;
+  width: 20vw;
+  min-width: 250px;
+  height: 180px;
+  box-shadow: rgba(0, 0, 0, 0.1) 0px 4px 15px;
+  border-radius: 8px; /* Rounded corners */
+  background-color: #ffffff; /* White background for each card */
+  display: flex;
+  flex-direction: column;
+  justify-content: space-evenly;
+  transition: transform 0.3s ease-in-out;
+}
+
+.admin-card:hover {
+  box-shadow: rgba(0, 0, 0, 0.2) 0px 12px 24px -8px,
+    rgba(0, 0, 0, 0.1) 0px 6px 16px -4px;
+  transform: translateY(-5px); /* Add slight hover animation */
+}
+
+.admin-card h4 {
+  margin: 0;
+  font-size: 1.2rem;
+  color: #4c5c6e; /* New header color */
+}
+
+.admin-card p {
+  margin: 0;
+  color: #6c7a89; /* Subtle text color */
+}
+
+/* Admin Requests Section */
+.admin-requests-container {
+  margin: 5vh 0 3vh 3vw;
+  border: 1px solid #d0d0d0; /* Light border */
+  width: 70%;
+  padding: 3vh 2vw;
+  background-color: #ffffff; /* White background */
+  border-radius: 10px; /* Rounded corners */
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1); /* Light shadow */
+}
+
+.admin-requests-container h3 {
+  color: #334756; /* Darker text color for title */
+  font-size: 1.5rem;
+}
+
+.admin-requests {
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+  margin-top: 3vh;
+  max-height: 350px; /* Limit height for scrolling */
+  overflow-y: auto;
+  margin-left: 2vw;
+}
+
+.admin-request {
+  display: flex;
+  align-items: center;
+  gap: 30px;
+  background-color: #f1f1f1; /* Soft background color for each request */
+  border: 1px solid #e1e1e1; /* Light border */
+  padding: 15px 25px;
+  margin-right: 10px;
+  border-radius: 10px; /* Rounded corners */
+  transition: background-color 0.3s ease;
+}
+
+.admin-request:hover {
+  background-color: #e9f1f7; /* Light blue on hover */
+}
+
+.admin-request span {
+  display: flex;
+  flex-direction: column;
+}
+
+.admin-request span b {
+  font-weight: bold;
+  color: #3d4f61; /* Darker text color */
+}
+
+/* Admin Request Actions */
+.admin-request-actions {
+  display: flex;
+  gap: 20px;
+}
+
+.admin-request-actions button {
+  width: 7rem;
+  padding: 8px 15px;
+  background-color: #4e73df; /* Button background color */
+  color: white;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+.admin-request-actions button:hover {
+  background-color: #2e59d9; /* Darker shade on hover */
+}
